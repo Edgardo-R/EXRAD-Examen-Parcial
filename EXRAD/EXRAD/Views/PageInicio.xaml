@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EXRAD.Views.PageInicio">
+    <ContentPage.Content>
+        <StackLayout Margin="10,0,10,10"
+                     BackgroundColor="AliceBlue">
+            <Image Source="logoUCENM.png"
+                   Aspect="Fill"
+                   HeightRequest="200"
+                   WidthRequest="300"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"/>
+            
+            <Label Text="Bienvenido a UCENM"
+                   FontSize="30"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   Margin="0,0,0,20"/>
+            
+            <Button Text="Agregar Contacto"
+                    BackgroundColor="AntiqueWhite"
+                    BorderWidth="1"
+                    x:Name="Btnagregar"
+                    Clicked="Btnagregar_Clicked"/>
+
+            <Button Text="Actualizar Contacto"
+                    BackgroundColor="AntiqueWhite"
+                    BorderWidth="1"
+                    x:Name="BtnActualizar"
+                    Clicked="BtnActualizar_Clicked"/>
+
+            <Button Text="Eliminar Contactos"
+                    BackgroundColor="AntiqueWhite"
+                    BorderWidth="1"
+                    x:Name="BtnBuscar"
+                    Clicked="BtnBuscar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
